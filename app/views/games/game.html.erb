@@ -1,0 +1,10 @@
+<h1>Bienvenues aux chiffres et des lettres</h1>
+
+<h2><%= @grid%></h2>
+
+<form action="/score">
+  <input type="text" placeholder="Guess the longest word" name="attempt">
+  <input type="hidden" name="grid" value="<%= @grid%>">
+  <input type="hidden" name="start" value="<%= @start %>">
+  <input type="submit" value="Go, time's running">
+</form>
